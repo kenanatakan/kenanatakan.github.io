@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>bekircem.me · coming soon</title>
-
-  <!-- Minimal, elegant font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    /* ---- reset & layout ---- */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      display:flex;align-items:center;justify-content:center;
-      font-family:"Space Grotesk",system-ui,sans-serif;
-      background:#111;
-      color:#eee;
-      overflow:hidden;
-    }
-
-    /* ---- subtle animated wall-wash ---- */
-    body::before{
-      content:"";
-      position:fixed;inset:0;
-      background:radial-gradient(circle at 50% 50%, #1f1f1f 0%, #000 100%);
-      animation:slowPulse 12s ease-in-out infinite alternate;
-      z-index:-1;
-    }
-    @keyframes slowPulse{
-      0%  {transform:scale(1)   rotate(0deg);}
-      100%{transform:scale(1.05) rotate(1deg);}
-    }
-
-    /* ---- text block ---- */
-    h1{
-      font-weight:500;
-      font-size:clamp(1.8rem,4vw,3rem);
-      line-height:1.35;
-      letter-spacing:0.5px;
-      max-width:24ch;
-      text-align:center;
-    }
-    em{font-style:normal;color:#7ac1ff}
-    small{
-      display:block;margin-top:2.5rem;
-      font-size:0.825rem;
-      opacity:0.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <h1>
-      Something curious stirs in the silence—
-      <em>like the opening hum of Pink Floyd’s “Echoes”.</em>
-      <br>Return soon to hear it crescendo.
-    </h1>
-    <small>© 2025 Bekir Cem Ünalan</small>
-  </main>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    
+    <div class="container">
+        <div class="logo-section">
+            <div class="logo-placeholder">
+                <div class="seed-icon">🌱</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="status-badge">
+                <span class="pulse-dot"></span>
+                Coming Soon
+            </div>
+            
+            <h1 class="main-text">
+                Time is planting seeds here; revisit when they break the surface in luminous bloom.
+            </h1>
+            
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text">Site under development</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <span>Beautiful Design</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <span>High Performance</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <span>Innovative Ideas</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 - Something amazing is coming</p>
+        </div>
+    </div>
 </body>
 </html>
